@@ -1,0 +1,32 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="[Demo] Demi Domi"
+run/main_scene="uid://e3v7d5584k5s"
+config/features=PackedStringArray("4.5", "Mobile")
+boot_splash/fullsize=false
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1270
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_height"
+
+[filesystem]
+
+import/blender/enabled=false
+
+[rendering]
+
+renderer/rendering_method="mobile"
