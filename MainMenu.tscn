@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://e3v7d5584k5s"]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=1617348845]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -8,7 +8,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1609434964]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,7 +17,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1411089893]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 1
 anchors_preset = 8
@@ -35,7 +35,7 @@ theme_override_font_sizes/font_size = 20
 text = "Start"
 icon_alignment = 1
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1481134075]
 self_modulate = Color(1, 1, 1, 0.78431374)
 layout_mode = 1
 anchors_preset = 7
