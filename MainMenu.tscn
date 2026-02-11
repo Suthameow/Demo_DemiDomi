@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://e3v7d5584k5s"]
 
+[ext_resource type="Script" uid="uid://cxy44ntp8676c" path="res://MainMenu.gd" id="1_i26rj"]
+
 [node name="Control" type="Control" unique_id=1617348845]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_i26rj")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1609434964]
 layout_mode = 1
@@ -50,3 +53,5 @@ offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Demi Domi xxxxx x x xxxx x x xxxx x xxxx xx x xxx"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

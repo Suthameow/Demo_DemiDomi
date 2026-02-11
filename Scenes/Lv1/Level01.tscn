@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dqxb6vdu4lo85"]
+
+[ext_resource type="PackedScene" uid="uid://ofy8f77qkxaf" path="res://2D/2D_Characters/DemoDomi/DemiDomi.tscn" id="1_yjf70"]
+[ext_resource type="PackedScene" uid="uid://vlihutrmq03u" path="res://Scenes/Lv1/Test_floor.tscn" id="2_dp4an"]
+
+[node name="Level01" type="Node2D" unique_id=484309431]
+
+[node name="DemiDomi" parent="." unique_id=846906137 instance=ExtResource("1_yjf70")]
+position = Vector2(78, 135)
+
+[node name="Test_Floor" parent="." unique_id=1267099628 instance=ExtResource("2_dp4an")]
+position = Vector2(64, 712)
+
+[node name="Test_Floor2" parent="." unique_id=1809369293 instance=ExtResource("2_dp4an")]
+position = Vector2(192, 654)
+
+[node name="Test_Floor3" parent="." unique_id=261035556 instance=ExtResource("2_dp4an")]
+position = Vector2(319, 587)
+
+[node name="Test_Floor4" parent="." unique_id=1847060026 instance=ExtResource("2_dp4an")]
+position = Vector2(448, 586)
+
+[node name="Test_Floor5" parent="." unique_id=1964136841 instance=ExtResource("2_dp4an")]
+position = Vector2(577, 585)
+
+[node name="Test_Floor6" parent="." unique_id=1645451819 instance=ExtResource("2_dp4an")]
+position = Vector2(817, 350)
+
+[node name="Test_Floor7" parent="." unique_id=265061536 instance=ExtResource("2_dp4an")]
+position = Vector2(815, 582)
+
+[node name="Test_Floor8" parent="." unique_id=644334765 instance=ExtResource("2_dp4an")]
+position = Vector2(1063, 584)
+
+[node name="Test_Floor9" parent="." unique_id=1053316192 instance=ExtResource("2_dp4an")]
+position = Vector2(1191, 613)
+
+[node name="Test_Floor10" parent="." unique_id=1385148553 instance=ExtResource("2_dp4an")]
+position = Vector2(1318, 546)
+
+[node name="Test_Floor11" parent="." unique_id=49544803 instance=ExtResource("2_dp4an")]
+position = Vector2(1445, 483)
