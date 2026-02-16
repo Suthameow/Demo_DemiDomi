@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dxxrinpiih3qb"]
+
+[ext_resource type="Texture2D" uid="uid://d36wcq3x3cfxc" path="res://2D/2D_Assets/Land/Land01_1024.png" id="1_tux1p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5oljr"]
+atlas = ExtResource("1_tux1p")
+region = Rect2(0, 0, 640, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uv1xf"]
+size = Vector2(634, 76)
+
+[node name="Land4T" type="StaticBody2D" unique_id=1049474022]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=266044289]
+texture = SubResource("AtlasTexture_5oljr")
+offset = Vector2(0, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1193650819]
+position = Vector2(0, 40)
+shape = SubResource("RectangleShape2D_uv1xf")

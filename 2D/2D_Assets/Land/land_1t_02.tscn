@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c7yl7r30f771d"]
+
+[ext_resource type="Texture2D" uid="uid://d36wcq3x3cfxc" path="res://2D/2D_Assets/Land/Land01_1024.png" id="1_ab6u8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_km0h2"]
+atlas = ExtResource("1_ab6u8")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e5l7b"]
+radius = 9.0
+height = 122.0
+
+[node name="Land_1t_01" type="StaticBody2D" unique_id=1658380739]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2015974911]
+texture = SubResource("AtlasTexture_km0h2")
+offset = Vector2(0, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=716699568]
+position = Vector2(-1, 12)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_e5l7b")
