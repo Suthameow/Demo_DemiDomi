@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dqxb6vdu4lo85"]
 
+[ext_resource type="PackedScene" uid="uid://4cf8lkjb337w" path="res://2D/2D_Assets/Land/map_level_01.tscn" id="1_5hrbv"]
 [ext_resource type="PackedScene" uid="uid://ofy8f77qkxaf" path="res://2D/2D_Characters/DemoDomi/DemiDomi.tscn" id="1_yjf70"]
 [ext_resource type="PackedScene" uid="uid://l8mj6tjhlapf" path="res://2D/2D_Assets/Land/land_1t_01.tscn" id="3_g2n81"]
 [ext_resource type="PackedScene" uid="uid://dxxrinpiih3qb" path="res://2D/2D_Assets/Land/land_4t.tscn" id="3_pxcd8"]
@@ -7,14 +8,20 @@
 
 [node name="Level01" type="Node2D" unique_id=484309431]
 
+[node name="Map_Level_01" parent="." unique_id=389825824 instance=ExtResource("1_5hrbv")]
+position = Vector2(-28, -331)
+
 [node name="DemiDomi" parent="." unique_id=846906137 instance=ExtResource("1_yjf70")]
 position = Vector2(61, 189)
 
 [node name="Land4T" parent="." unique_id=1049474022 instance=ExtResource("3_pxcd8")]
-position = Vector2(570, 424)
+position = Vector2(1884, 431)
 
 [node name="Land_1t_01" parent="." unique_id=1658380739 instance=ExtResource("3_g2n81")]
-position = Vector2(89, 196)
+position = Vector2(1401, 277)
+
+[node name="Land_1t_03" parent="." unique_id=1164337132 instance=ExtResource("4_pxcd8")]
+position = Vector2(608, 168)
 
 [node name="Land_1t_02" parent="." unique_id=446426269 instance=ExtResource("4_pxcd8")]
 position = Vector2(305, 126)

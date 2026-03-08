@@ -4,23 +4,26 @@ extends CharacterBody2D
 
 
 const SPEED : float = 300.0
-const JUMP_VELOCITY : float = -850.0
+const JUMP_VELOCITY : float = -950.0
 
 func _physics_process(delta: float) -> void:
 	#Add Turn Animation.
 	if velocity.x > 1 or velocity.x < -1 :
 		demi_domi_animation.animation = "run"
+	
 	else:
 		demi_domi_animation.animation = "idle"
-		
+	
 	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		if velocity.y > 0:
 			$DemiDomi_Animation.animation = "jump_down"
+			$CollisionShape2D.disabled = false
 		else :
 			$DemiDomi_Animation.animation = "jump_up"
+			$CollisionShape2D.disabled = true
 	
 		
 	# Handle Jump.
